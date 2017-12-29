@@ -6,18 +6,11 @@
 
 import React, { Component } from 'react';
 import {
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-  Image
+    AppRegistry
 } from 'react-native';
-import TabNavigator from 'react-native-tab-navigator';
-import { Navigator } from 'react-native-deprecated-custom-components';
-import Boy from './Boy';
-import FetchTest from './FetchTest';
+import setup from './js/pages/setup';
 
-
+/*
 export default class App extends Component<{}> {
     constructor(props){
       super(props);
@@ -28,7 +21,7 @@ export default class App extends Component<{}> {
 
     render() {
         return (
-            /*<TabNavigator>
+            /!*<TabNavigator>
               <TabNavigator.Item
                   selected={this.state.selectedTab === 'tb_popular'}
                   selectedTitleStyle={{color:'red'}}
@@ -66,8 +59,8 @@ export default class App extends Component<{}> {
                   onPress={() => this.setState({ selectedTab: 'tb_my' })}>
                 <View style={styles.page4}></View>
               </TabNavigator.Item>
-            </TabNavigator>*/
-            /*<Navigator
+            </TabNavigator>*!/
+            /!*<Navigator
             initialRoute={
                 {component:Boy}
             }
@@ -77,38 +70,9 @@ export default class App extends Component<{}> {
             }}>
 
         </Navigator>
-        );*/
+        );*!/
             <FetchTest/>
         )
     }
-}
-
-const styles = StyleSheet.create({
-  container:{
-    flex:1,
-      backgroundColor:'#f5fcff',
-  },
-
-    page1:{
-      flex:1,
-        backgroundColor:'red',
-    },
-    page2:{
-        flex:1,
-        backgroundColor:'yellow',
-    },
-    page3:{
-        flex:1,
-        backgroundColor:'green',
-    },
-    page4:{
-        flex:1,
-        backgroundColor:'blue',
-    },
-    image:{
-      height:22,
-        width:22,
-    }
-
-});
+}*/
 
