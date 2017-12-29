@@ -15,6 +15,7 @@ import {
 import TabNavigator from 'react-native-tab-navigator';
 import { Navigator } from 'react-native-deprecated-custom-components';
 import Boy from './Boy';
+import FetchTest from './FetchTest';
 
 
 export default class App extends Component<{}> {
@@ -66,7 +67,7 @@ export default class App extends Component<{}> {
                 <View style={styles.page4}></View>
               </TabNavigator.Item>
             </TabNavigator>*/
-        <Navigator
+            /*<Navigator
             initialRoute={
                 {component:Boy}
             }
@@ -76,7 +77,9 @@ export default class App extends Component<{}> {
             }}>
 
         </Navigator>
-        );
+        );*/
+            <FetchTest/>
+        )
     }
 }
 
