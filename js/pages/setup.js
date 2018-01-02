@@ -1,11 +1,4 @@
 import React,{Component} from 'react';
-import {
-    View,
-    Text,
-    Image,
-    StyleSheet,
-    TouchableOpacity,
-}from 'react-native';
 import { Navigator } from 'react-native-deprecated-custom-components';
 import WelcomePage from './WelcomePage';
 

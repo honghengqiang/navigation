@@ -9,14 +9,13 @@
 
 import React, {Component} from 'react';
 import {
-    Platform,
     StyleSheet,
-    Text,
     View,
     Image
 } from 'react-native';
 import TabNavigator from 'react-native-tab-navigator';
 import PopularPage from './PopularPage';
+import AsyncStorageTest from  '../../AsyncStorageTest';
 
 
 export default class HomePage extends Component<{}> {
@@ -32,10 +31,10 @@ export default class HomePage extends Component<{}> {
             <TabNavigator>
                 <TabNavigator.Item
                     selected={this.state.selectedTab === 'tb_popular'}
-                    selectedTitleStyle={{color: 'red'}}
+                    selectedTitleStyle={{color: '#6495ed'}}
                     title="最热"
                     renderIcon={() => <Image style={styles.image} source={require('../../res/images/ic_polular.png')}/>}
-                    renderSelectedIcon={() => <Image style={[styles.image, {tintColor: 'red'}]}
+                    renderSelectedIcon={() => <Image style={[styles.image, {tintColor: '#6495ed'}]}
                                                      source={require('../../res/images/ic_polular.png')}/>}
                     badgeText="1"
                     onPress={() => this.setState({selectedTab: 'tb_popular'})}>
@@ -50,7 +49,7 @@ export default class HomePage extends Component<{}> {
                     renderSelectedIcon={() => <Image style={[styles.image, {tintColor: 'yellow'}]}
                                                      source={require('../../res/images/ic_trending.png')}/>}
                     onPress={() => this.setState({selectedTab: 'tb_trending'})}>
-                    <View style={styles.page2}></View>
+                    <AsyncStorageTest/>
                 </TabNavigator.Item>
                 <TabNavigator.Item
                     selected={this.state.selectedTab === 'tb_favorite'}
@@ -94,10 +93,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#f5fcff',
-    },
-    page2: {
-        flex: 1,
-        backgroundColor: 'yellow',
     },
     page3: {
         flex: 1,

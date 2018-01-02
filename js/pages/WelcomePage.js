@@ -5,9 +5,6 @@ import React,{Component} from 'react';
 import {
     View,
     Text,
-    Image,
-    StyleSheet,
-    TouchableOpacity,
 }from 'react-native';
 import NavigationBar from '../common/NavigationBar';
 import HomePage from './HomePage';
