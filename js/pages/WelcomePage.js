@@ -27,7 +27,7 @@ export default class WelcomePage extends Component{
     }
 
     render(){
-        return <View>
+        return <View style={{flex:1}}>
             <NavigationBar
             title={'欢迎'}/>
             <Text>欢迎</Text>
